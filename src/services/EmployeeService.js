@@ -35,13 +35,16 @@ class EmployeeService{
         
         const data = new FormData() 
         data.append('file', file);
-        console.warn(file);
+   
         let url = "http://localhost:8080/api/v1/upload-file?id="+id;
  
         axios.post(url, data, { // receive two parameter endpoint url ,form data 
         })
         .then(res => { // then print response status
-            console.warn(res);
+            console.log(res);
+            alert("file uploaded")
+        }, (err) =>{
+            console.log(err);
         })
     }
 }

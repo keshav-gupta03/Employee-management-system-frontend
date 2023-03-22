@@ -22,6 +22,7 @@ function ViewEmployee() {
         setDesignation(res.data.designation);
         setId(res.data.id);
         setprofileImage(res.data.profileImage);
+        console.log(res.data.profileImage);
       },
       (err) => console.log(err)
     );

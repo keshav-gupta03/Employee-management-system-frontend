@@ -31,17 +31,9 @@ function UpdateEmployee(props) {
   }, []);
 
   function upload(){
-    console.log(profileImage);
-    // EmployeeService.uploadFile(profileImage).then((res)=>{
-      
-    //   alert("succefully image is uploaded")
-    // }
-    // ,(err)=>{
-    //   console.log("image error" + err);
-
-    // });
+   
     EmployeeService.uploadFile(profileImage,id);
-    // alert("file uploaded")
+   
   }
 
   function update() {
